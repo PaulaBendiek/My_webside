@@ -1,0 +1,29 @@
+---
+title: "plots"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## This is my plots page 
+
+```{r message=FALSE}
+library(tidyverse)
+```
+
+```{r message=FALSE}
+x <- 1:10
+y <- x**2
+
+df <- tibble(x = x,
+             y = y)
+
+ggplot(df, aes(x = x, y = y))+
+  geom_point()
+```
+
+```{r}
+
+```
